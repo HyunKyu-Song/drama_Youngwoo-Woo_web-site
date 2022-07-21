@@ -1,0 +1,104 @@
+body{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  /* background-image: url(법원.png); */
+}
+
+#header{
+  /* background-color: rgb(128, 221, 234); */
+  background-color: burlywood;
+  /* opacity: 0.9; */
+}
+
+h1 a{
+  color: black;
+  text-shadow: 0 0 5px white, 0 0 5px white;
+  display: block;
+  /* border: 2px solid; */
+  text-decoration: none;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  /* border: 2px black solid; */
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* background-color: aquamarine; */
+  background-color: rgb(225, 158, 71);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  /* opacity: 0.9; */
+}
+
+li a:hover:not(.active) {
+  /* background-color: rgb(65, 254, 191); */
+  background-color: coral;
+  /* opacity: 0.5; */
+}
+
+.active {
+  background-color: coral;
+}
+
+#main{
+  flex-grow: 1;
+  /* background-color: aqua; */
+  background-color: #aaf0d1;
+  padding-left: 5px;
+}
+
+#main h2{
+  text-align: center;
+  font-size: large;
+  line-height: 30px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  /* border: 2px solid; */
+}
+
+#main_img{
+  /* border: 2px solid;
+  height: 550px; */
+  /* background-color: black; */
+  /* border-radius: 50%;
+  overflow: hidden; */
+  
+}
+
+#grid{
+  display: grid;
+  grid-template-columns: 39vw 22vw 20vw;
+  /* border: 2px solid; */
+}
+
+#scroll{
+  overflow-y: scroll;
+  /* background-color: rgb(167, 255, 255); */
+  background-color: #79e9b7;
+  border: 2px solid;
+  width: 38vw;
+  height: 65vh;
+}
+
+#header > :nth-child(2){
+  padding-left: 10px;
+  padding-bottom: 15px;
+  font-weight: bold;
+}
+
