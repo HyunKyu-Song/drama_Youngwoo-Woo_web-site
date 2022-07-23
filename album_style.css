@@ -1,0 +1,20 @@
+#main{
+  display: grid;
+  grid-template-columns: 30vw 30vw 30vw;
+  padding-top: 15px;
+}
+
+#main div a{
+  /* margin-top: 50px; */
+  text-decoration: none;
+  color: black;
+}
+
+img{
+  width: 20vw;
+}
+
+#main > *{
+  font-weight: bold;
+  text-align: center;
+}

@@ -1,4 +1,26 @@
 #main{
+  display: flex;
+  /* border: 3px solid ; */
+  gap: 50px;
   padding-top: 10px;
   padding-left: 10px;
+}
+
+#infomation{
+  border: 2px solid;
+  overflow-y: scroll;
+  height: 545px;
+  width: 900px;
+  background-color: rgb(27 127 204 / 80%);
+}
+
+#infomation img {
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  margin: 3px;
+  width: 150px;
+}
+
+#infomation > *{
+  display: inline-flex;
 }

@@ -1,0 +1,98 @@
+body{
+  background-image: url(배경.png);
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  /* background-image: url(법원.png); */
+}
+
+#header{
+  background-color: rgb(128, 221, 234);
+  opacity: 0.9;
+}
+
+h1 a{
+  color: black;
+  text-shadow: 0 0 5px white, 0 0 5px white;
+  display: block;
+  /* border: 2px solid; */
+  text-decoration: none;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(27 127 204 / 52%);
+  opacity: 0.9;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  /* opacity: 0.9; */
+}
+
+li a:hover:not(.active) {
+  /* background-color: rgb(65, 254, 191); */
+  background-color: aqua;
+  opacity: 0.8;
+}
+
+.active {
+  background-color: aqua;
+  opacity: 0.8;
+}
+
+#main{
+  flex-grow: 1;
+  background-color: #40ebebb0;
+  /* opacity: 0.9; */
+  padding-left: 5px;
+}
+
+#main h2{
+  text-align: center;
+  font-size: large;
+  line-height: 30px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  /* border: 2px solid; */
+}
+
+#grid{
+  display: grid;
+  grid-template-columns: 39vw 22vw 20vw;
+  /* border: 2px solid; */
+}
+
+#scroll{
+  overflow-y: scroll;
+  /* background-color: rgb(167, 255, 255); */
+  background-color: rgb(27 127 204 / 80%);
+  border: 2px solid;
+  width: 38vw;
+  height: 65vh;
+}
+
+#header > :nth-child(2){
+  padding-left: 10px;
+  padding-bottom: 15px;
+  font-weight: bold;
+}
+
