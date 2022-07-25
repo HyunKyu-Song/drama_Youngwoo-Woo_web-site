@@ -8,7 +8,6 @@ body{
   margin: 0;
   width: 100vw;
   height: 100vh;
-  /* background-image: url(법원.png); */
 }
 
 #header{
@@ -96,3 +95,35 @@ li a:hover:not(.active) {
   font-weight: bold;
 }
 
+#예고편{
+  display: none;
+}
+
+/* 예고편 버튼 이름 id */
+#btn_name{
+  background-color: rgb(27 127 204 / 52%);
+  font-weight: bold;
+  border-radius: 40px;
+  margin-top: 13px;
+}
+
+#poster_border{
+  width: 330px;
+  height: 473px;
+  /* background-image: url('메인 포스터.jpg');
+  background-size:100%;
+  border-radius: 10px; */
+  /* overflow: hidden; */
+}
+
+.poster{
+  display: none;
+  border-radius: 10px;
+  height: 473px;
+}
+
+#poster_btn{
+  background-color: rgb(27 127 204 / 52%);
+  font-weight: bold;
+  border-radius: 40px;
+}

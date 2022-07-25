@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>이상한 변호사 우영우</title>
   <link rel="stylesheet" href="index_style.css">
+  <script src="index_javascript.js"></script>
 </head>
 <body>
   <div id="header">
@@ -18,11 +19,19 @@
       <li><a href="character.html">등장인물</a> </li>
       <li><a href="watch.html">보러가기</a> </li>
       <li><a href="album.html">관련앨범</a> </li>
+      <!-- <li>
+        <button id="btn_name" value="open" onclick="trailer(this)">예고편 보기</button>
+        <button id="poster_btn" value="first" onclick="poster_change(this)">포스터 보기</button>
+      </li> -->
     </ul>
   </div>
 
   <div id="main">
-    <h2>ENA 수목드라마 <이상한 변호사 우영우>는?<br>천재적인 두뇌와 자폐스펙트럼을 동시에 가진 신입 변호사 우영우(박은빈 분)의 대형 로펌 생존기</h2>
+    <h2>ENA 수목드라마 <이상한 변호사 우영우>는?
+      <button id="poster_btn" value="first" onclick="poster_change(this)">포스터 보기</button>
+      <button id="btn_name" value="open" onclick="trailer(this)">예고편 보기</button><br>
+      천재적인 두뇌와 자폐스펙트럼을 동시에 가진 신입 변호사 우영우(박은빈 분)의 대형 로펌 생존기
+    </h2>
     <div id="grid">
       <div id="scroll">
         <p>
@@ -47,16 +56,21 @@
         시청자들의 입에서 "나도 저런 변호사를 만나고 싶다!"는 소리가 절로 나오도록, '이상한 변호사 우영우'는 매화 '영우가 가진 변호사로서의 장점'을 충실히 표현할 것이다.
         </p>
       </div>
-      <div id="main_img">
-        <img 
-          src="메인 포스터.jpg" 
-          style="border-radius:10px" 
-          alt="메인 포스터" 
-          height="473"
-        >
+
+      <div id="poster_border">
+        <div>
+          <img id="poster_1" class="poster" src="메인 포스터.jpg" alt="메인 포스터">
+        </div>
+        <div>
+          <img id="poster_2" class="poster"src="메인 포스터2.jpg" alt="메인 포스터">
+        </div>
+        <div>
+          <img id="poster_3" class="poster"src="메인 포스터3.jpg" alt="메인 포스터">
+        </div>
       </div>
+
       <div>
-        <iframe 
+        <iframe id="예고편"
           width="560" 
           height="315" 
           src="https://www.youtube.com/embed/JQ2rukD8B8U" 
